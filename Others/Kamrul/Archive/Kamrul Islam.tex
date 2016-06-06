@@ -1,0 +1,693 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% Md. Kamrul Islam's resume
+%%   - based off work by Yisong Yue 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line]{res_yy}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\BCplusplus{{\textbf{\rm C\raise.5ex\hbox{\small ++}}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+\def\BCSharp{{\textbf{\rm C\raise.5ex\hbox{\small \#}}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Kamrul Islam}
+
+%this is right aligned
+\address{
+% website: www.yisongyue.com \ \ \ \ \ email: yisongyue@gmail.com  
+\begin{minipage}{0.30\linewidth}
+  %\href{http://www.unc.edu/}{University of North Carolina} \\
+  33 Firmin Road \\
+  Churchill \\
+  VIC 3842\\
+  Australia
+\end{minipage}
+\begin{minipage}{0.68\linewidth}
+  \begin{tabular}{ll}
+    Mobile: & (04) 2121-0865,  (04) 0152-4774\\
+    Email: & \href{mailto:kamrul@kamrulislam.com}{\tt kamrul@kamrulislam.com} \\
+    Homepage: & \href{http://www.mdkamrul.com/}{\tt http://www.mdkamrul.com/} \\
+    Blog: & {\href{http://kamrul-important.blogspot.com/}{\tt http://kamrul-important.blogspot.com/}}  \\
+  \end{tabular}
+\end{minipage}
+}
+
+
+
+\begin{resume}
+
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+%\section{\textsc{Objective}}
+%I would like to build a career in the world of innovative software development applying the knowledge gained from my degree and experience, and also based on my attributes of innovativeness, discipline, hard-working and a team player.
+%%
+%% the meat of the resume starts now
+%%
+
+\begin{formatb}
+  \title{l}\employer{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Industry Experience}}
+\employer{\textbf{\href{http://leapelearning.com}{\tt Leap eLearning}}}
+\title{\bf Software Developer (Full Time)}
+\location{VIC, Australia}
+\dates{Mar 2012 - current}
+\begin{position}
+\vspace*{-.2cm}
+\begin{itemize}
+\item Develop a full featured builder module  where writers can create, edit, upload course content. PHP CodeIgniter framework has been used in the back end and front end has been developed using jQuery, backbone, underscore, node, CSS, and HTML. 
+\item  Fix bugs and do testing.
+\end{itemize}
+\end{position}
+\vspace*{-.2cm}
+
+\employer{\textbf{\href{http://www.scu.edu.au/business-faculty/}{\tt Business Faculty, Southern Cross University}}}
+\title{\bf Software Developer (Part time)}
+\location{NSW, Australia}
+\dates{Nov 2009 - Feb 2012}
+\begin{position}
+\vspace*{-.2cm}
+\begin{itemize}
+\item Development of a Mobile based software for e-health system, primarily using J2ME then another version for \textit{android}. It has three components: 
+	\begin{itemize}
+		\item A PC based application (using \CSharp.NET) which reads data from ECG device (AliveECG) via \textit{bluetooth} and sends the data to central server using JSON. The application has a doctor's module developed using WPF and \CSharp (code behind) that shows patients with their severity level.
+		\item A server module (using PHP) that can read and send data using JSON and  can also store data in a MySQL database.
+		\item Mobile applications (using J2ME) where separate application modules are provided for doctors and patients. The doctor module shows patients' data in real time and the patient module provides easy interface for patient to quickly contact specialist/doctor/nurse.   
+	\end{itemize}
+\end{itemize}
+\end{position}
+\vspace*{-.2cm}
+%\employer{\textbf{\href{http://www.aerontech.com/}{\tt Aeron Technologies Ltd.}}}
+%\title{\bf Game Developer (Part time)}
+%\location{Dhaka, Bangladesh}
+%\dates{Jan 2011 - current}
+%\begin{position}
+%\vspace*{-.2cm}
+%\begin{itemize}
+%\item Developed multi-player ranking algorithm using PHP and Python (two versions) for the multi-player  Pool Master game for the Facebook. 
+%\item Displayed all time top ten scorers, all time top ten scorers among friends, last weeks top ten scorers, and last weeks top ten scorers among friends using JavaScript and jQuery. 
+%\item Redesigned database to accommodate large user base without disrupting user experience on the web. 
+%\end{itemize}
+%\end{position}
+%
+%\vspace*{-.2cm}
+\employer{\textbf{\href{http://robi.com.bd/}{\tt Robi Axiata Limited}}}
+\title{\bf Sr. System Analyst (Full time)}
+\location{Dhaka, Bangladesh}
+\dates{Jan 2005 - May 2008}
+\begin{position}
+\vspace*{-.2cm}
+\begin{itemize}
+\item In charge of Interconnect Billing System (BSCS 8.0) and VOIP billing system.
+\item Developed automated client applications for Customer Management Server (CMS) (using java) and run those for bulk update from time to time. 
+\item Developed Corporate Bill Viewer (using PHP, MSSQL) and manage it for audit department.
+\item Lead product configuration team (PX module of BSCS 8.0).
+\item Served as \textit{business analyst} for different projects during cut off phase.
+\end{itemize}
+\end{position}
+\vspace*{-.2cm}
+\employer{\textbf{{\href{http://www.sikraft.com/}{\tt Sikraft Solutions Ltd.}}}}
+\title{\bf Programmer (Full time)}
+\location{Dhaka, Bangladesh}
+\dates{Jun 2004 - Jan 2005}
+\begin{position}
+\vspace*{-.2cm}
+\begin{itemize}
+\item Coding Client side of Integrated Hospital Management System by \CSharp. This includes- design \& coding for front-end components e.g. patient module, doctor module, roster module, medicine module, appointment module.
+\item Testing different modules (peer to peer).
+\end{itemize}
+\end{position}
+
+%\vspace*{-.3cm}
+
+\section{\textsc{Programming Skills}}
+
+\emph{Programming Languages}: C, \Cplusplus, \CSharp (Mono \& .NET),  WPF,   ASP.NET,  Visual Basic, Visual \Cplusplus,  Java (J2SE, J2EE, J2ME), JavaScript, PHP, Python, Perl, Prolog, Ruby on Rails\\[3pt]
+\emph{Database}:  MySQL(both Windows and Linux), Oracle (9i), Microsoft SQL server, MS Access\\[3pt]
+\emph{Web Technology}: HTML, CSS, AJAX, JQuery, MooTool, CMS (Joomla, SyntaxCMS), Symphony, Cake PHP.\\[3pt]
+\emph{Libraries and Tools}: Android Development Toolkit (ADT), Google App Engine, Facebook API, OpenGL, \LaTeX, Ti{\textit k}Z, pgfplot, GIMP, IBM Rational Rose, MS Visio, Vim, Emacs.\\[3pt]
+\emph{Version Controls}: SVN (both server and client), GIT (client only), VSS (client only).  
+
+\section{\textsc{Education}}
+
+\textbf{PhD in Computer Science} \hfill 2008 - Feb 2012 \\
+Monash University \hfill Supervisor: Madhu Chetty and Manzur Murshed\\
+Thesis: {\it Memetic approach for prediction of low resolution protein structure using lattice models}
+\\[3pt]
+\textbf{Bachelor of Science in Computer Science and Engineering} \hfill 1999 - 2004 \\ 
+Bangladesh University of Engineering and Technology (BUET) \hfill With Honors (82.4\%)\\
+Thesis: {\it Solving optimization problem using improved fast evolutionary programming}
+\newline
+%\textbf{Rajshahi Board} \hfill 1997 - 1998 \\ 
+%Higher-Secondary School Certificate (HSC) \hfill 14\textsuperscript{th} in Merit List(88.9\%)\\
+%\newline
+%\textbf{Rajshahi Board} \hfill 1995 - 1996 \\ 
+%Secondary School Certificate (SSC) \hfill 15\textsuperscript{th} in Merit List(91.3\%)\\
+
+\vspace*{-.5cm}
+\begin{formatb}
+  \title{l}\\
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Professional Training and Further Qualifications}}
+\title{\textbf{NGN Engineer Training}}
+\employer{Training Center, Huawei Technologies Co., Ltd.} \dates{2007}
+\begin{position}
+\end{position}
+\vspace*{-.5cm}
+\title{\textbf{ASP.NET}}
+\employer{Mantrust Software Ltd., Dhaka, Bangladesh.} \dates{2006}
+\begin{position}
+\end{position}
+\vspace*{-.5cm}
+\title{\textbf{Web Programming( HTML, PHP , MySQL)}}
+\employer{Institute of Information and Communication Technology (IICT), BUET, Bangladesh} \dates{2003}
+\begin{position}
+\end{position}
+\vspace*{-.5cm}
+
+\begin{formatb}
+  \title{l} \dates{r}\\
+  %\employer{l}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Research\quad Experience}}
+\title{\textbf{Cultural Memetic Algorithm (\CSharp, shell script):}}
+\dates{2008-2011}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Proposed and implemented a novel evolutionary algorithm, called \textit{cultural memetic algorithm} (CMA), for a NP-hard problem, protein structure prediction using lattice models. Both implementations for Windows (using {\CSharp}.NET) and Linux (using mono) of CMA are developed. A large scale implementation of CMA has been done using Monash Campus Grids (MCG) and Victorian Partnership for Advanced Computing (VPAC) clusters. Shell script has been extensively used to run CMA in batch mode for different sequence and to process the output. 
+\end{position}
+
+\title{\textbf{Divide and Conquer Niching (\CSharp, shell script):}}
+\dates{2008-2011}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Proposed and implemented a novel niching technique, called \textit{divide and conquer niching} (DCN), for CMA. Both implementations for Windows (using {\CSharp}.NET) and Linux (using mono) of DCN on CMA are developed.  
+\end{position}
+
+\title{\textbf{Output Analyser ({\CSharp}.NET, MySQL):}}
+\dates{2010-2011}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+A complete package has been developed that can process output files, store summary results in database, presents different analysis tables and graphs. It also generated automated code for exporting tables and structures to \LaTeX. (Please visit my website for detail)
+\end{position}
+
+
+
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%
+
+ 
+
+
+
+
+
+
+
+
+%\section{\textsc{Research\quad Projects}}
+%\title{\textbf{Cultural Memetic Algorithm (\CSharp):}}
+%\dates{2008-2011}
+%%\employer{TM International Bangladesh Ltd. (AKTEL)}
+%\begin{position}
+%Proposed and implemented a novel evolutionary algorithm, called \textit{cultural memetic algorithm} (CMA), for a NP-hard problem, protein structure prediction using lattice models. Both implementations for Windows (using {\CSharp}.NET) and Linux (using mono) of CMA are developed. A large scale implementation of CMA has been done using Monash Campus Grids (MCG) and Victorian Partnership for Advanced Computing (VPAC) clusters. 
+%\end{position}
+%
+%
+%\title{\textbf{Output Analyser ({\CSharp}.NET, MySQL):}}
+%\dates{2010-2011}
+%%\employer{TM International Bangladesh Ltd. (AKTEL)}
+%\begin{position}
+%A complete package has been developed that can process output files, store summary results in database, presents different analysis tables and graphs. It also generated automated code for exporting tables and structures to \LaTeX.
+%\end{position}
+
+
+\section{\textsc{Other Projects}}
+
+\title{\textbf{Mobile based E-health System (J2ME, java web service, MySQL):}}
+\dates{2010-2011}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Capable of showing patient information including BP, temperature, ECG data, from a central database using web services. Designed and developed a complete mobile based e-health system using J2ME, SOAP, GlassFish web server and MySQL database as a part of the casual contract with the Southern Cross University. Another version I have developed for android platform using PHP based JSONRPC server. 
+\end{position}
+
+\title{\textbf{RemindAnyWay (\href{http://www.remindanyway.com/}{\tt RAW}) (Android, PHP, MySQL, JSON, Symphony):}}
+\dates{2010}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Participated in the design and development as a team for the \href{http://www.egov.vic.gov.au/victorian-government-resources/government-initiatives-victoria/government-and-politics-victoria/government-information-and-data-victoria/victoria-launches-app-my-state-competition-with-100-000-in-prizes.html}{\tt App My State} contest. Designed and developed server side application and database, also processed government data and stored in the database for the application in the required format. Our application won the \textit{popular choice award}. We have used GIT for version controlling of this project.
+\end{position}
+
+
+\title{\textbf{Salat-Scheduler (\BCSharp):}}
+\dates{2008}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Smart system for salat (prayer) time and appointment scheduling. Generates alarm and task-bar notification. Also has export import facilities. 
+\end{position}
+
+\title{\textbf{Summary Interconnect Billing System (PHP, MSSQL):}}
+\dates{2008}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Capable of generating invoice, reports for comparative analysis and can also perform reconciliation within a minimal time.
+\end{position}
+\title{\textbf{VOIP Billing System (PHP, MySQL):}}
+\dates{2008}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+A full billing system with rating engine build with PHP, MySQL which also include a web based configuration and reporting module.  
+\end{position}
+\title{\textbf{Automatic Unbar (Java):}}
+\dates{2007}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Automatically unbars the subscribers who have paid their due bills and replaces previous application at Robi.
+\end{position}
+
+\title{\textbf{Machine tracker (\BCSharp):}}
+\dates{2006}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Monitors that the servers, gateways, and routers used for VOIP purpose and generates automatic SMS alert if any of the machines is down. Initiated, designed and developed this for Robi to reduce loss due to the failure of the machines.
+\end{position}
+
+\title{\textbf{GRE Vocabulary Learning (PHP, AXAJ, CSS, MySQL):}}
+\dates{2006}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Provides a comprehensive GRE word-list. User can mark tough words and test their skills. Very handy for GRE word list learners.
+\end{position}
+
+\title{\textbf{CDR Generator (\BCSharp):}}
+\dates{2005}
+%\employer{TM International Bangladesh Ltd. (AKTEL)}
+\begin{position}
+Generates call detail record (CDR) in a file for any specific time, duration, any IMSI, any rate plan, any type (origination, termination, call forwarding), tele/sms. This provided a helpful platform to test new configuration. Initiated and developed this at Robi while working with product module.
+\end{position}
+
+
+
+%\begin{formatb}
+%  \employer{l}\dates{r}\\
+%  \body\\
+%\end{formatb}
+
+
+
+
+%%
+%% This section could also use more formatting, but looks ok, as is
+%%
+
+%\section{\textsc{Qualifications}}
+
+%\emph{Programming Languages}: \Cplusplus, \CSharp, Cg, HLSL, ARB assembly, SML, OCaML, PHP, MySQL, Java, Python, Perl, MIPS assembly
+
+%\emph{Libraries and Tools}: Vim, STL, DirectX, OpenGL, \LaTeX, GIMP, Adobe Suite, Macromedia Suite, MatLab, Mathematica, Microsoft Visual Studio, GCC, GDB
+
+
+\section{\textsc{Mentoring\qquad Experience}}
+
+%\employer{\textbf{\href{http://www.gscit.monash.edu.au/}{\tt GSIT, Monash University}}}
+%\title{\bf PhD in InfoTech (Full time)}
+%\location{VIC, Australia}
+%\dates{Jul 2008 - current}
+%\begin{position}
+%\vspace*{-.4cm}
+%\begin{itemize}
+%\item Proposed and implemented a novel evolutionary algorithm, called \textit{cultural memetic algorithm} (CMA), for a NP-hard problem, protein structure prediction using lattice models. Both implementations for Windows (using {\CSharp}.NET) and Linux (using mono) of CMA are developed. A large scale implementation of CMA has been done using Monash Campus Grids (MCG) and Victorian Partnership for Advanced Computing (VPAC) clusters. 
+%\item Developed a complete package that can process output files, store summary results in database, presents different analysis tables and graphs. It also generated automated code for exporting tables and structures to \LaTeX. (Please visit my website for detail)
+%\end{itemize}
+%\end{position}
+
+\employer{\textbf{\href{http://www.gscit.monash.edu.au/}{\tt GSIT, Monash University}}}
+\title{\bf Casual Research Assistant}
+\location{VIC, Australia}
+\dates{Jul 2008 - current}
+\begin{position}
+\vspace*{-.4cm}
+\begin{itemize}
+\item Marking different courses.
+\item Replying session group questions. 
+\end{itemize}
+\end{position}
+
+\employer{\textbf{\href{http://www.monash.edu.au/}{\tt Gippsland Campus, Monash University}}}
+\title{\bf Examination Invigilator (Casual)}
+\location{VIC, Australia}
+\dates{Sep 2011 - current}
+\begin{position}
+\vspace*{-.4cm}
+\begin{itemize}
+\item Work as an invigilator during exams.
+\end{itemize}
+\end{position}
+
+
+\employer{\textbf{\href{http://www.monash.edu.au/}{\tt Support Worker- Gippsland, Monash University}}}
+\title{\bf Casual/Sessional Position}
+\location{VIC, Australia}
+\dates{Feb 2011 - current}
+\begin{position}
+\vspace*{-.4cm}
+\begin{itemize}
+\item Taking notes for the students with disabilities.
+\end{itemize}
+\end{position}
+
+
+\title{\bf Tutor (Casual Contract)}
+\employer{\textbf{{\href{http://www.buet.ac.bd/iict/}{\tt Institute of Information and Communication Technology}}}}
+\location{BUET, Dhaka, Bangladesh}
+\dates{Apr 2004 - Jun 2004}
+\begin{position}
+\vspace*{-.4cm}
+%\begin{itemize}
+%\item Taught Web Programming (HTML, PHP, MySQL)
+%\end{itemize}
+\end{position}
+
+\vspace*{-.4cm}
+
+\begin{format}
+  \employer{l}\\
+  \title{r}\\
+%  \location{l}\dates{r}\\
+  \body\\
+\end{format}
+
+\section{\textsc{Publications}}
+
+I have more than 10 publication on different conferences/journals. Please visit my website to see the list of publications.
+%\vspace{-0.4cm}
+%\employer{\textbf{Conflict resolution based global search operators for long protein structure prediction}}
+%\title{ICONIP 2011}
+%\begin{position}
+%Authors: \textit{Md Kamrul Islam}, Madhu Chetty and Manzur Murshed\hfill (ERA \textbf{A})
+%\end{position}
+%
+%\employer{\textbf{A memetic approach to protein structure prediction in triangular lattices}}
+%\title{ICONIP 2011}
+%\begin{position}
+%Authors: \textit{Md Kamrul Islam}, Madhu Chetty, A D Ullah and K Steinh\"ofel\hfill (ERA \textbf{A})
+%\end{position}
+%
+%
+%\employer{\textbf{Novel Local Improvement Techniques in Clustered Memetic Algorithm for Protein Structure Prediction}}
+%\title{IEEECEC 2011}
+%\begin{position}
+%Authors: \textit{Md Kamrul Islam}, Madhu Chetty and Manzur Murshed\hfill (ERA \textbf{A})
+%\end{position}
+%
+%
+%
+%\employer{\textbf{Clustered Memetic  Algorithm  with Local Heuristics for ab initio Protein Structure Prediction}}
+%\title{IEEE Trans Evo Comp (\textit{2nd Review})}
+%%\location{} \dates{}
+%\begin{position}
+%Authors: \textit{Md Kamrul Islam} and Madhu Chetty\hfill (ISI Impact Factor: \textbf{4.371})
+%\end{position}
+%
+%
+%\employer{\textbf{Clustered Memetic  Algorithm  for Protein  Structure Prediction}}
+%\title{IEEECEC 2010}
+%\begin{position}
+%Authors: \textit{Md Kamrul Islam} and Madhu Chetty\hfill (ERA \textbf{A})
+%\end{position}
+%
+%
+%\employer{\textbf{A Novel Memetic Algorithm for Protein Structure Prediction}}
+%\title{AusAI 2009}
+%\begin{position}
+%Authors: \textit{Md Kamrul Islam} and Madhu Chetty\hfill (ERA \textbf{B})
+%\end{position}
+
+
+
+
+%%
+%% Note that we're redefining the formatting
+%% We only have one row of information now, instead of two
+%%
+
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+
+\section{\textsc{Awards}}
+
+
+\employer{\textbf{Popular Choice Award}}
+\dates{\href{http://www.egov.vic.gov.au/victorian-government-resources/government-initiatives-victoria/government-and-politics-victoria/government-information-and-data-victoria/victorian-app-my-state-winners-announced.html}{\tt 2010 App My State Contest}}
+\begin{position}
+As a team member of \href{http://www.remindanyway.com/}{\tt RAW}, I won this prize from the Premier of Victoria, John Brumby.
+\end{position}
+\vspace{-0.2cm}
+\employer{\textbf{Telstra IT Endeavour award}}
+\dates{2010 Gippsland School of IT}
+\begin{position}
+As a recognition to the outstanding contribution as a postgraduate student of GSIT, Telstra provided the award.
+\end{position}
+
+\vspace{-0.2cm}
+
+\employer{\textbf{Award for Outstanding Contribution}}
+\dates{2009 Higher Degree by Research}
+\begin{position}
+Best poster award from \textit{Gippsland Poster Exhibition}
+\end{position}
+
+\vspace{-0.2cm}
+
+\employer{\textbf{Award for Outstanding Contribution}}
+\dates{2009 Higher Degree by Research}
+\begin{position}
+Best poster award from \textit{Monash University Poster Exhibition}
+\end{position}
+
+\vspace{-0.2cm}
+
+\employer{\textbf{Award for Best Volunteer}}
+\dates{2009 MUGSU Award}
+\begin{position}
+For outstanding work as a GAPS Secretary
+\end{position}
+
+%\vspace{-0.1cm}
+%
+%\employer{\textbf{BUET Dean's List and Merit list scholarship }}
+%\dates{2000-2004}
+%\begin{position}
+%Received BUET Dean's List scholarship twice and Merit list scholarship once
+%\end{position}
+
+
+%\begin{formatb}
+%  \title{l}\\
+%  \body\\
+%\end{formatb}
+%\title{\textbf{Other}}
+%\begin{position}
+%\vspace*{-.4cm}
+%\begin{itemize}
+%\item University Grant Commission Scholarship from Bangladesh Government \hfill{2004}
+%\item Mayor's Medal from Khulna City Corporation for excellent result in HSC \hfill{1998}
+%\item Chess Champion at Pabna Cadet College (senior group)\hfill{1997}
+%\item Prime Minister's Award from Sheikh Hasina for excellent result in SSC \hfill{1996}
+%\end{itemize}
+%\end{position}
+\section{\textsc{Community Involvement}}
+
+\employer{\textbf{GAPS President}}
+\dates{Nov 2009 - Nov 2010}
+\begin{position}
+Elected as the president of Gippsland Association of Postgraduate Students (GAPS) by votes from all postgraduate students of Monash University Gippsland Campus.
+\end{position}
+\vspace{-0.2cm}
+\employer{\textbf{GAPS Secretary}}
+\dates{Nov 2008 - Nov 2009}
+\begin{position}
+Managed all the events arranged by GAPS.
+\end{position}
+\vspace{-0.2cm}
+\employer{\textbf{MUIS Vice President}}
+\dates{Nov 2008 - Nov 2009}
+\begin{position}
+Organized different community gatherings and notified every member of the Monash University Islamic Society (MUIS) about the prayer time updates.
+\end{position}
+
+% \begin{formatb}
+%   \employer{l}\dates{r}\\
+% \body\\
+% \end{formatb}
+
+% \employer{\textbf{University Grant Commission Scholarship }}
+% \dates{2004}
+% \begin{position}
+%Received this scholarship for good result in BUET
+% \end{position}
+
+% \employer{\textbf{Mayor's Medal for excellent result in HSC}}
+% \dates{1998}
+% \begin{position}
+%Received Mayor's Medal from Khulna City Corporation for excellent result in HSC
+% \end{position}
+
+% \employer{\textbf{Prime Minister's Award  for excellent result in SSC}}
+% \dates{1996}
+% \begin{position}
+%Received Prime Minister's Award from Sheikh Hasina  for excellent result in SSC
+% \end{position}
+
+% \employer{\textbf{Chess Champion at Pabna Cadet College (senior group)}}
+% \dates{1997}
+% \begin{position}
+%Became champion in the Chess Tournament at Pabna Cadet College senior group
+% \end{position}
+\vspace{-0.4cm}
+\begin{formatb}
+  \employer{l}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Interests}}
+
+\employer{\textbf{Games}}
+%\dates{1997}
+\begin{position}
+Played in grade C cricket for the Monash University Cricket Club in 2008-2009. Played table tennis and badminton tournament arranged by GAPS.    
+\end{position}
+\vspace{-0.2cm}
+\employer{\textbf{Hobies}}
+%\dates{1997}
+\begin{position}
+Like to do gardening. Grown a small veggie-garden in the back yard of my house. ACM problem solving is also one of my hobbies (Visit : \href{http://acm.timus.ru/author.aspx?id=67901}{Timus Site})   
+\end{position}
+\vspace{-0.7cm}
+%%
+%% Nothing special here, just a normal table
+%%
+
+%\section{\textsc{Course Work}}
+%  \begin{tabular}{lllll}
+%  Information Networks   & \ \ & Machine Learning    & \ \ & Theory of Computation \\ 
+%  Computer Graphics      & \ \ & Machine Vision      & \ \ & Programming Languages \\
+%  Software Engineering   & \ \ & Algorithms          & \ \ & Artificial Intelligence     \\
+%  Operating Systems      & \ \ & Databases           & \ \ & Computer Architecture \\
+%  Numerical Methods      & \ \ & Graph Theory        & \ \ & Differential Equations      \\
+%  Probability Theory     & \ \ & Number Theory       & \ \ & Differential Geometry       \\
+%  Advanced Calculus      & \ \ & Abstract Algebra    & \ \ & Advanced Combinatorics   \\
+%  \end{tabular}
+
+\section{\textsc{References}}
+%\address{
+\begin{minipage}[!t]{0.49\linewidth}
+  %\href{http://www.unc.edu/}{University of North Carolina} \\
+  A/Prof \textbf{Manzur Murshed}\\
+  Head of School \\
+  Gippsland School of Information Technology\\
+  Monash University, Gippsland Campus\\
+  Churchill Vic 3842, Australia\\
+  Email: \textit{Manzur.Murshed@monash.edu}\\
+  Mobile: 0417 142 754\\
+\end{minipage}\hfill
+\begin{minipage}[!t]{0.49\linewidth}
+  %\href{http://www.unc.edu/}{University of North Carolina} \\
+	\textbf{Dr. Golam Sorwar} PhD, MIEEE, MACS\\
+	School of Commerce and Management\\
+	Multimedia and Information Technology Unit\\
+	Southern Cross University\\
+	Hogbin Drive, Coffs Harbour, NSW 2457\\
+	Email: gsorwar@scu.edu.au\\    
+	Mobile: 0478 734 529\\   
+\end{minipage}
+\newline\newline
+\begin{minipage}[!t]{0.49\linewidth}
+  %\href{http://www.unc.edu/}{University of North Carolina} \\
+  \textbf{Daniel Jordan} JP\\
+  Executive Officer \\
+  Monash University Gippsland Student Union Inc\\
+  Churchill Vic 3842, Australia\\
+  Email: \textit{daniel.jordan@monash.edu}\\
+  Mobile: 0417 548 123\\
+\end{minipage}\hfill
+\begin{minipage}[!t]{0.49\linewidth}
+  \textbf{Dan Gray}\\
+  Development Manager\\
+  Level 1, 232 Clarendon Street\\
+  South Melbourne,\\
+  VIC 3205, Australia\\
+  Email: \textit{dan.gray@leapelearning.com}\\
+  Mobile: 0438 833 458\\
+\end{minipage}
+%}
+
+
+\end{resume}
+\end{document}
